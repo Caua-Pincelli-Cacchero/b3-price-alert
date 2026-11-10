@@ -1,0 +1,17 @@
+# build do host nunca deve entrar na imagem
+target/
+
+# versionamento e IDE
+.git/
+.gitignore
+.idea/
+
+# segredo: senha do Postgres não vai para o contexto de build
+.env
+
+# infra e docs não afetam o artefato
+docker-compose.yaml
+Dockerfile
+.dockerignore
+*.md
+HELP.md
